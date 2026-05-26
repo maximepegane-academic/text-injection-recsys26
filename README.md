@@ -62,28 +62,28 @@ python -m run_experiment --dataset=instacart --model=SeqPersonalPop --epochs=1 -
 
 **SASRec**
 ```bash
-python -m run_experiment --dataset=instacart --model=SASRec --batch_data_processing=True --epochs=1 --full_nlp=False --hugging_face_model=dangvantuan/sentence-camembert-base --repeatable=True --log_wandb=True --wandb_project=measure_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=5.063466e-04 --hidden_size=32 --n_layers=1 --n_heads=1
+python -m run_experiment --dataset=instacart --model=SASRec --batch_data_processing=True --epochs=1 --full_nlp=False --hugging_face_model=efederici/sentence-bert-base --repeatable=True --log_wandb=True --wandb_project=measure_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=5.063466e-04 --hidden_size=32 --n_layers=1 --n_heads=1
 ```
 ### NLP injected architectures
 
 **SASRecNLP**
 ```bash
--m run_experiment --dataset=instacart --model=SASRecNLP --batch_data_processing=True --epochs=1 --full_nlp=False --hugging_face_model=dangvantuan/sentence-camembert-base --repeatable=True --log_wandb=True --wandb_project=measure_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=1.534467e-04 --hidden_size=16 --n_layers=1 --n_heads=2
+-m run_experiment --dataset=instacart --model=SASRecNLP --batch_data_processing=True --epochs=1 --full_nlp=False --hugging_face_model=efederici/sentence-bert-base --repeatable=True --log_wandb=True --wandb_project=measure_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=1.534467e-04 --hidden_size=16 --n_layers=1 --n_heads=2
 ```
 
 **GLLF**
 ```bash
-python -m run_experiment --dataset=instacart --model=GatedPoolingRecommender --epochs=1 --hugging_face_model=dangvantuan/sentence-camembert-base --repeatable=True --log_wandb=True --wandb_project=htuning_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=1.606167e-04 --hidden_size=32 --batch_data_processing=True
+python -m run_experiment --dataset=instacart --model=GatedPoolingRecommender --epochs=1 --hugging_face_model=efederici/sentence-bert-base --repeatable=True --log_wandb=True --wandb_project=htuning_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=1.606167e-04 --hidden_size=32 --batch_data_processing=True
 ```
 
 **CAT**
 ```bash
--m run_experiment --dataset=instacart --model=CAT --batch_data_processing=True --epochs=1 --full_nlp=False --hugging_face_model=dangvantuan/sentence-camembert-base --repeatable=True --log_wandb=True --wandb_project=measure_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=2.796893e-07 --hidden_size=32 --n_layers=4 --n_heads=4
+-m run_experiment --dataset=instacart --model=CAT --batch_data_processing=True --epochs=1 --full_nlp=False --hugging_face_model=efederici/sentence-bert-base --repeatable=True --log_wandb=True --wandb_project=measure_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=2.796893e-07 --hidden_size=32 --n_layers=4 --n_heads=4
 ```
 
 full token representation version:
 ```bash
--m run_experiment --dataset=instacart --model=CAT --batch_data_processing=True --epochs=1 --full_nlp=True --hugging_face_model=dangvantuan/sentence-camembert-base --repeatable=True --log_wandb=True --wandb_project=measure_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=2.796893e-07 --hidden_size=32 --n_layers=4 --n_heads=4
+-m run_experiment --dataset=instacart --model=CAT --batch_data_processing=True --epochs=1 --full_nlp=True --hugging_face_model=efederici/sentence-bert-base --repeatable=True --log_wandb=True --wandb_project=measure_instacart --is_hyperparam_search=True --optimize=True --clip_grad_norm=1.0 --learning_rate=2.796893e-07 --hidden_size=32 --n_layers=4 --n_heads=4
 ```
 
 
