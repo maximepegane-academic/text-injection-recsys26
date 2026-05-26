@@ -1,0 +1,7 @@
+embedding_size: 64              # (int) The embedding size of items.
+num_layers: 1                   # (int) The number of layers in GRU.
+dropout_prob: 0.2               # (float) The dropout rate.
+aggregation: 'max'              # (str) One of ['max', 'mean'], used for aggregation of item for basket representation
+rnn_type: 'RNN'                 # (str) One of ['RNN', 'LSTM', 'GRU']
+non_linearity: 'relu'           # (str) One of ['relu', 'tanh'  ]
+loss_type: 'CE'                 # (str) The type of loss function. Range in ['BPR', 'CE'].

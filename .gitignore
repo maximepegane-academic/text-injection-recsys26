@@ -1,0 +1,5 @@
+data/instacart/instacart.*
+ignore/*
+__pycache__/
+*.pyc
+.idea*

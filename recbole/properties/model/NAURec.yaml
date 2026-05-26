@@ -1,0 +1,6 @@
+embedding_size: 64              # (int) The embedding size of items.
+dropout_prob: 0.2               # (float) The dropout rate for embeddings.
+loss_type: 'CE'                 # (str) The type of loss function. Range in ['BPR', 'CE'].
+nau_reg_weight: 1e-4            # (float) The strength of the sparsity penalty (Lambda).
+                                # Higher values (e.g., 1e-2) force more weights to exactly 0 or 1.
+                                # Lower values (e.g., 1e-5) allow for softer gating.

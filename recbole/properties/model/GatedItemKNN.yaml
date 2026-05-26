@@ -1,0 +1,5 @@
+hugging_face_model: dangvantuan/sentence-camembert-base
+hidden_size: 32
+repeat_loss_scale: 0.01
+id_init_method: prod2vec
+k_neighbors: 10

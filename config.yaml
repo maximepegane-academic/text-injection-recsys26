@@ -1,0 +1,42 @@
+'data_path': './data/'
+'USER_ID_FIELD': 'shopper_id'
+'ITEM_ID_FIELD': 'product_id'
+'TIME_FIELD': 'transaction_date'
+'MAX_ITEM_LIST_LENGTH': 100 #median amount of purchase over three month from lc database
+'user_amount_timestamp_num_interval': "[3,inf)"
+'user_inter_num_interval': "[0,inf)"
+'item_inter_num_interval': "[0,inf)"
+
+benchmark_filename: ['part1', 'part2', 'part3']
+'field_separator': ','
+'load_col':
+  'inter': ['shopper_id', 'product_id', 'transaction_date']
+  # 'user': ['shopper_id', 'original_shopper_id']
+  'item': ['product_id','product_name','aisle','department']
+'TEXT_FIELD': ['product_name','aisle','department']
+'EMPTY_TEXT': '#NA'
+'worker': 0
+'train_neg_sample_args':
+  'sample_num': 5
+#  'distribution': 'popularity'
+#  'candidate_num': 5
+#  'dynamic': True
+
+'train_batch_size': 512
+'eval_batch_size': 512
+'eval_args':
+  'split':
+     'fold': [ 8, 1, 1]
+  'group_by': 'user'
+  'order': 'TO'
+  'metrics': ['Recall']
+  'mode': 'full'
+
+'valid_metric': 'Recall@10'
+'metrics':  ["ItemCoverage","binnedrecall", "binnedexplorerecall", "binnedrepeatrecall",'Recall', 'RepeatRecall', 'ExploreRecall', 'ContributionRepeatRecall','NDCG', 'RepeatNDCG', 'ExploreNDCG', 'ContributionRepeatNDCG', 'PopularityOverlap']
+'topk': [10, 15, 20, 30, 50, 100]
+'group_offset': 0
+'log_wandb': True
+'epochs': 1
+'loss_type': 'CE'
+'shuffle': False

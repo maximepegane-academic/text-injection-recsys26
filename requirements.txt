@@ -1,0 +1,9 @@
+google-cloud-storage>=3.4.0
+cloudml-hypertune>=0.1.0.dev6
+pyyaml>=0.2.5
+names_generator>=0.2.0
+google-cloud-aiplatform>=1.123.0
+flatdict>=4.0.1
+cloudml-hypertune>=0.1.0.dev6
+pytest>=9.0.0
+wandb>=0.25.1

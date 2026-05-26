@@ -1,0 +1,4 @@
+in_channel: 128
+out_channel: 32
+kernel_size: 5
+num_layers: 3

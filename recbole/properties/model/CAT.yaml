@@ -1,0 +1,5 @@
+hidden_size: 256
+n_heads: 4
+n_layers: 2
+dropout: 0.2
+repeat_loss_scale: 0.01

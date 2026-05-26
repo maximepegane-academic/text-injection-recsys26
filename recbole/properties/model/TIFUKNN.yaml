@@ -1,0 +1,10 @@
+number_of_group: 5
+within_group_decay: 0.9
+global_decay: 0.7
+number_neighbors: 200
+distance: "euclidean"
+alpha: 0.9
+
+knn_method: "full"
+precompute_neighbors: False
+knn_batch_size: 3
